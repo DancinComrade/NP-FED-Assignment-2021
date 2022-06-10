@@ -1,0 +1,96 @@
+﻿html {
+    width: 100%;
+}
+form {
+    max-width: 80%;
+    font-size: medium;
+    font-family: sans-serif;
+    align-content: center;
+    margin-left: 35%;
+}
+
+.page {
+    align-content: center;
+    align-items: center;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=date],
+textarea, select {
+    box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: 0;
+}
+
+
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=date]:focus,
+textarea:focus, select:focus {
+    -moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+
+.name {
+    width: 23%;
+}
+
+.text {
+    width: 46%;
+}
+
+.submit, .reset {
+    background: #ff006e;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+}
+
+
+#trojanweb {
+    background: #ff006e;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    margin-left: 29%;
+}
+
+#formhead {
+    margin-left: 2%;
+}
+
+.submit:hover, .reset:hover {
+    background: #000000;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+
+}
+
+#back-video {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+h2, h3, p {
+    color: #fff;
+}

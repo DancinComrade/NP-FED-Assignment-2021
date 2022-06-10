@@ -1,0 +1,930 @@
+﻿:root {
+    /*--Custom Properties (Variables)--*/
+}
+
+body
+{
+
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+#prev-footer {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+/*----Introduction------*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+/*-----Navigation Bar (Same throughout the Website)-----*/
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    color:#fff;
+}
+
+/*----Next Button----*/
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #9400D3;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #9400D3;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+/*-----Global-----*/
+.intro {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+    top: -35px;
+    font-size: 14px;
+}
+
+/*----Next Button----*/
+#prevention-btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #1E90FF;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#prevention-btn-span {
+    background: #1E90FF;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s
+}
+
+#prevention-btn:hover span {
+    width: 100%;
+}
+
+#prevention-btn:hover {
+    border: none;
+}
+
+.credit-body {
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.credit-body h3 {
+    text-align: left;
+    word-wrap: break-word;
+
+}
+
+.credit-body p {
+    padding-left: 0;
+}
+
+.credit-body h3 a {
+    color: black;
+}
+
+/*----Card----*/
+/*----https://www.youtube.com/watch?v=5DEq5cWNYt8----*/
+.card {
+    color: white;
+    background: url(https://images.unsplash.com/photo-1607877361964-bf792b65e593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 80%; /*100ch*/
+    border-radius: 1rem;
+    transition: transform 500ms ease;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 30px; /*10px*/
+}
+
+.card-title {
+    position: relative; /*makes this the containing block (parent)*/
+    width: max-content;
+    max-width: 100%;
+}
+
+.card-title::after {
+    content: ''; /*without content will not appear*/
+    position: absolute; /*follow parent*/
+    height: 3px;
+    left: calc(var(--padding) * -1);
+    bottom: -2px;
+    width: calc(100% + var(--padding));
+    background: white;
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after {
+    transform: scaleX(1);
+}
+
+@media (hover) {
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-content {
+        --padding: 1.5rem;
+        padding: var(--padding);
+        background: linear-gradient( hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.3) 20%, hsl(0 0% 0% / 1));
+        border-radius: 1rem;
+        transform: translateY(45%);
+        transition: transform 500ms ease;
+    }
+
+    .card-content > *:not(.card-title) {
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+
+    .card:hover .card-content {
+        transform: translateY(0);
+        transition-delay: 500ms;
+    }
+
+    .card:hover .card-content > *:not(.card-title) {
+        opacity: 1;
+        transition-delay: 500ms;
+    }
+
+    .card-title::after {
+        transform: scaleX(0);
+    }
+}
+
+/*----Content----*/
+.content a {
+    text-decoration: none;
+}
+
+.cont-title {
+    /*background-image: url(https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;*/
+    text-align: center;
+    padding-top: 6.25rem;
+
+}
+
+.cont-content {
+    margin: auto;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 10px 0 10px;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.content-item {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.content-item p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px 0 0 0;
+}
+
+.column {
+    margin: auto;
+    max-width: 40%;
+    text-align: left;
+}
+
+sup a {
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+sup, sub {
+    vertical-align: 0;
+    position: relative;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: 0.8ex;
+}
+
+/*----------Donation----------*/
+#donation {
+    width: 80%;
+    margin: auto;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    height: fit-content;
+}
+
+#donation-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /*height: 800px;*/
+    width: 50%;
+    position: relative;
+}
+
+#donation-left::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 3px;
+    height: 90%;
+    right: 1%;
+}
+
+#donation-right {
+    background-color: black;
+    width: 50%;
+    /*height: 800px;*/
+
+}
+
+form {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+#form-title {
+    font-size: 2.5vw;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+
+form textarea {
+    resize: none;
+}
+
+#donate-amt {
+    margin-top: 10px;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+#other {
+    width: calc(100% - 20px);
+}
+
+.donate-but {
+    display: inline-block;
+    width: calc((100% / 3) - 9px);
+    text-align: center;
+    min-width: 50px;
+    max-height: 50px;
+    margin-left: 0;
+    border-radius: 0;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.donate-but.active, .donate-but:hover {
+    background-color: white;
+    color: black;
+}
+ 
+.donate-but:focus {
+    background-color: white;
+    color: black;
+}
+
+label {
+    height: 100%;
+    color: #fff;
+    cursor: text;
+    margin: 30px 0 0 0;
+}
+
+button img {
+    width: 40%;
+    height: 20%;
+    margin: auto;
+}
+
+#paypal {
+    background-image: url('/images/paypal.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#monero {
+    background-image: url('/images/monero.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#paypal, #monero {
+    width: 100%;
+    margin: 20px 0 0 0;
+    height: 40px;
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+}
+
+/*----------Captcha---------*/
+#captcha {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    background-color: white;
+}
+
+#cap-but {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    background-color: black;
+}
+
+#cap-inp {
+    margin: auto;
+    width: calc(100% - 25px);
+    border: 3px solid black;
+    color: black;
+}
+
+#captcha h3 {
+    color: black;
+}
+
+#cap-img {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#cap-img img {
+    opacity: 0.95;
+    object-fit: cover;
+}
+
+#cap-text {
+    all: unset;
+    color: white;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 10px;
+    text-shadow: 0 0 2px #b1b1b1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*----------Table----------*/
+table {
+    margin: auto;
+    width: 450px;
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+th img {
+    width: 100px;
+}
+
+/*-----Popup-----*/
+
+#donation {
+    position: relative;
+}
+
+.popup .pop-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .pop-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pop-cont h1 {
+    color: black;
+}
+
+.pop-close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+.popup.active .pop-overlay {
+    display: block;
+}
+
+.popup.active .pop-cont {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/*----------Animations----------*/
+.slide-in-left.is-inViewport {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-2-3 2:13:7
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tracking-in-expand.is-inViewport {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-2-3 18:5:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*-----Responsive Devices-----*/
+
+@media screen and (max-width: 650px) {
+    .cont-content {
+        text-align: left;
+        font-size: 1rem;
+        padding: 0 10px 0 10px;
+        margin-top: 30px;
+    }
+
+    .content-item {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .content-item p {
+        color: #777;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px 0 0 0;
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .cont-title {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    table {
+        width: 80%;
+        margin-top: 20px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th img {
+        width: 60px;
+    }
+
+    /*----------Donation----------*/
+    #donation {
+        width: 100%;
+        margin: auto;
+        color: white;
+        margin-top: 50px;
+        display: block;
+        background-color: black;
+        height: fit-content;
+    }
+
+    #donation-left {
+        width: 100%;
+        height: 150px;
+    }
+    
+    #donation-left::after {
+        all: unset;
+    }
+
+    #form-title {
+        position: relative;
+        width: max-content;
+        font-size: 24px;
+    }
+
+    #form-title::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 4px;
+        bottom: -15px;
+        left: 0;
+    }
+
+    #donation-right {
+        width: 100%;
+        display: inline-block;
+    }
+
+    form {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    /*-----Captcha-----*/
+    #captcha {
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+        width: calc(100% - 20px);
+        background-color: white;
+    }
+
+    #cap-but {
+       margin: auto;
+       margin-bottom: 10px;
+       width: 100%;
+       border-radius: 0;
+       border: 0;
+       background-color: black;
+    }
+
+    #cap-inp {
+        margin: auto;
+        width: calc(100% - 25px);
+        border: 3px solid black;
+        color: black;
+    }
+
+    #captcha h3 {
+        color: black;
+    }
+
+    #cap-img {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    #cap-img img {
+        opacity: 0.95;
+        object-fit: cover;
+    }
+
+    #cap-text {
+        all: unset;
+        color: white;
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+        letter-spacing: 10px;
+        text-shadow: 0 0 2px #b1b1b1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*-----Popup-----*/
+
+    .popup .pop-cont {
+        width: 350px;
+    }
+
+    #pop-title {
+        margin-top: 10px
+    }
+
+    /*-----Card-----*/
+    .card-body {
+        font-size: 2vw;
+
+    }
+
+    .card {
+        height: fit-content;
+    }
+}
+
+/*Specifically, on mobile devices with no hover*/
+@media (hover: none) {
+    /*-----Card-----*/
+    .card {
+        height: 100px;
+    }
+
+    .card-body {
+        display: none;
+    }
+
+    .card-title {
+        word-wrap: break-word;
+        width: 200px;
+        margin-left: 20px;
+    }
+}
