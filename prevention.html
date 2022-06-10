@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Cyber Security</title>
+    <link rel="stylesheet" href="css/style5.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="header">
+        <video autoplay loop class="back-video" muted plays-inline>
+            <source src="videos/prevention-bg.mp4" type="video/mp4" />
+        </video>
+        <nav>
+            <a id="nav-title">Group 1 </a>
+            <a href="#" class="nav-hamburger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!------------MainMenu----------->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Introduction.html">INTRODUCTION</a></li>
+                    <li><a href="worm.html">WORM</a></li>
+                    <li><a href="virus.html">VIRUS</a></li>
+                    <li><a href="trojan.html">TROJAN</a></li>
+                    <li><a href="prevention.html">PREVENTION</a></li>
+                    <li><a href="credits.html">CREDITS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-----Prevention----->
+        <div class="text-box">
+            <h1>Prevention</h1>
+            <p>Protect your devices</p>
+            <div>
+                <a href="#middle"><button type="button" id="prevention-btn"><span id="prevention-btn-span"></span>Let's Go</button></a>
+            </div>
+        </div>
+    </section>
+    <!-----------Prevention------------->
+    <div id="middle">
+        <a href="middle"></a>
+        <section class="intro">
+            <h1>Introduction</h1>
+            <p>How to secure your devices?</p>
+            <p style="padding-top: 0; margin-bottom: 1em;">Click to explore more</p>
+        </section>
+    </div>
+    <!--Cards-->
+    <div class="card" onclick='window.location.href="#vuln"'>
+        <div class="card-content">
+            <h2 class="card-title">Vulnerabilities</h2>
+            <p class="card-body">
+                No software is perfect. They are all developed by humans, and humans make mistakes, which
+                introduces bugs and glitches. As such, attackers take advantage of these loopholes to discover and exploit novel vulnerabilities,
+                which in turn, leads them to your system or data.
+            </p>
+        </div>
+    </div>
+    <div class="card" onclick='window.location.href="#social"'>
+        <div class="card-content">
+            <h2 class="card-title">Safe Browsing Practices</h2>
+            <p class="card-body">
+                Did you know that 98% of all cyber attacks rely on social engineering? (Purplesec, 2021) Well, now you know!
+                Malware don't just magically appear on your machine, more often than not, some form of user intervention is
+                made and those pesky bugs got in. That's why, as users, we have to be responsible for our own actions and know what we
+                are actually clicking on.
+            </p>
+        </div>
+    </div>
+    <div class="card" onclick='window.location.href="#layers-of-security"'>
+        <div class="card-content">
+            <h2 class="card-title">Layers of Security</h2>
+            <p class="card-body">
+                Naturally, as humans, we all make mistakes. Regardless of how tech-savvy you are, sometimes, you might just
+                simply overlook something, and the bugs got in. So, why not let your own device help you instead?
+            </p>
+        </div>
+    </div>
+
+    <!--Content-->
+    <div class="cont" id="vuln">
+        <h1 class="cont-title tracking-in-expand animate-text">Vulnerabilities</h1>
+        <div class="cont-content">
+
+            <div class="content-item slide-in-left animate-text">
+                <h2 class="animate-text">Keep software up to date.</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    Software such as Microsoft Office and Adobe Suite or even your Windows operating system release updates regularly, from quality-of-life improvements to major security enhancements.
+                    Though frequent updates may seem annoying, but they are absolutely crucial in order to secure your device and data.
+                </p>
+            </div>
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>Remove legacy or unused programs.</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    An outdated software is ticking time bomb, waiting to go off, as with no more security patches being released,
+                    vulnerabilities will never be patched, coupled with poor and reliability, your system is left with a bunch of loopholes waiting to be exploited.
+                </p>
+            </div>
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>Enable click-to-play plugins.</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    Besides unpatched loopholes, malware can also make their way into your device through malicious advertisements. As such,
+                    even without any user intervention, a malware can take advantage of this and load itself automatically onto your device,
+                    should you allow plugin animations like the good ol' Flash Player to run by itself.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cont" id="social">
+        <h1 class="cont-title tracking-in-expand animate-text">Safe Browsing Practices</h1>
+        <div class="cont-content">
+            <div class="content-item slide-in-left animate-text">
+                <h2>Watch for malicious links and websites.</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    Likewise, if you stumble upon malicious sites, not only will it contain malicious popups and advertisements, it may
+                    also contain malware and exploit kits, which is a collection of exploits, such as Nuclear, and Angler/Axpergle.
+                    (levinec, Dansimp, get-itips, RAJU2529, & Dani, 2021) So do ensure the site has https, with a valid certificate,
+                    and even check online reviews of the site before proceeding.
+                </p>
+            </div>
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>User Access Control.</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    In the event when a malware is launched, most malware will run with the same privileges as the user account that
+                    initiated it. As such, it is recommended to use a non-adminstrator when browsing the internet. With limited
+                    permissions, malware are unable to make devastating changes on the device, and delete your files.
+                </p>
+            </div>
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>Hash and Scan.</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    Before running a file that is downloaded from a credible online source, it is best to hash the downloaded file and comapare
+                    its hash to the one from the online source. This ensures that the downloaded file is exactly the same as the one from the
+                    source and it is not altered, which may occur duing a Man-in-the-middle Attack (MIM). After which, scan the file with a 
+                    decent antivirus software to ensure that the file is indeed safe to run.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont" id="layers-of-security">
+        <h1 class="cont-title tracking-in-expand animate-text">Layers of Security</h1>
+        <div class="cont-content">
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>Anti Virus</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    In the Wild West-like internet, an antivirus is your best friend as it helps you to
+                    automatically detect and quarantine or remove malicious programs and files on your devices.
+                    Here is a list of well-known antivirus programs which you can consider trying out:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Rating</th>
+                            <th>Pricing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="images/bitdefender.png" /></th>
+                            <th>5/5</th>
+                            <th>SGD 22.49/year</th>
+                        </tr>
+                        <tr>
+                            <th><img src="images/kaspersky.png" /></th>
+                            <th>4.5/5</th>
+                            <th>SGD 27.00/year</th>
+                        </tr>
+                        <tr>
+                            <th><img src="images/malwarebytes.svg" /></th>
+                            <th>4/5</th>
+                            <th>SGD 39.99/year</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>Firewall</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    A firewall is defined as a software or hardware that helps to protect your network by monitoring your network
+                    traffic for potential malicious activities. As such, a firewall is important as it helps to secure your network
+                    and data by preventing malicious inbound traffic from approaching your devices and network. (Alison , 2021)
+                </p>
+            </div>
+
+            <div class="content-item slide-in-left animate-text">
+                <h2>Password</h2>
+            </div>
+            <div class="content-item slide-in-left animate-text">
+                <p>
+                    Almost all web services nowadays require you to create an account, before you can use their services. As users,
+                    we certainly do not want others to just break in to our accounts, which may lead to loss of data and even assets
+                    especially on banking platforms. As such, you need to create numerous strong passwords for each of your account,
+                    which may be hard to keep track of. Here's a list of a few popular password managers to help you keep track
+                    of your passwords:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Rating</th>
+                            <th>Pricing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="images/keeper.png" /></th>
+                            <th>4.5/5</th>
+                            <th>SGD 38.37/year</th>
+                        </tr>
+                        <tr>
+                            <th><img src="images/dashlane.png" /></th>
+                            <th>4/5</th>
+                            <th>SGD 53.74/year</th>
+                        </tr>
+                        <tr>
+                            <th><img src="images/bitwarden.png" /></th>
+                            <th>4/5</th>
+                            <th>FREE</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!---------Donation-------->
+    <div id="donation">
+        <div class="donate-child" id="donation-left">
+            <h2 id="form-title">Like what we've done?<br />Buy us a cup of coffee! ☕</h2>
+        </div>
+        <div class="donate-child" id="donation-right">
+            <form method="post">
+                <label for="email">Email</label>
+                <br />
+                <input id="email" name="email" type="email" placeholder="Email" />
+                <br />
+                <label>Donation Amount</label>
+                <br />
+                <div id="donate-amt">
+                    <button name="amt" class="donate-but active" value="10" required>$10</button>
+                    <button name="amt" class="donate-but" value="20" required>$20</button>
+                    <button name="amt" class="donate-but" value="30" required>$30</button>
+                </div>
+                <input id="other" name="amt" type="number" min="1" placeholder="Other" />
+                <label>Message</label>
+                <textarea placeholder="Optional" rows="4" cols="40"></textarea>
+
+                <!----------Captcha---------->
+                <div id="captcha">
+                    <div id="cap-content">
+                        <div id="cap-img">
+                            <img src="images/captcha-bg.png" alt="" />
+                            <span id="cap-text"></span>
+                        </div>
+                        <button id="cap-but">Reset</button>
+                    </div>
+                    <input id="cap-inp" type="text" placeholder="Enter Captcha" maxlength="6" required />
+                </div>
+
+                <!----------Popup---------->
+                <div class="popup" id="donate-popup">
+                    <div class="pop-overlay"></div>
+                    <div class="pop-cont">
+                        <div class="pop-close" onclick="togglePopup()">✕</div>
+                        <h1 id="pop-title">Donation Success</h1>
+                        <p id="pop-para">Thank you for your kind donation.</p>
+                    </div>
+                </div>
+                <button type="submit" id="paypal" onclick="togglePopup()"></button>
+                <button type="submit" id="monero" onclick="togglePopup()"></button>
+            </form>
+        </div>
+    </div>
+
+    <!---------Footer-------->
+    <section id="prev-footer">
+        <p>&copy; &#9824 Tan Kai Zhe &#9824</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/prevention.js"></script>
+</body>
+</html>
